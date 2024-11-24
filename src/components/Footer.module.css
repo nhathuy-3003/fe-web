@@ -1,0 +1,72 @@
+.footer {
+    background-color: whites;
+    color: black;
+    padding: 40px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 10px;
+  }
+  .logo {
+    max-width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Space around the logo */
+  }
+  
+  
+  .column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #007bff; /* Màu khi hover */
+  }
+  
+  .bottomBar {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+  
+  .bottomBar p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

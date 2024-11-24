@@ -1,0 +1,101 @@
+.mainContainer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .frame1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .forgotPassword {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .welcomeMessage {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .frame2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGroup {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .emailLabel {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+  }
+  
+  .button12 {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button12:hover {
+    background-color: #3b38d3;
+    transform: translateY(-2px);
+  }
+  
+  .button14 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .backToLogin {
+    color: #555;
+  }
+  
+  .createAnAccount {
+    color: #4f46e5;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .createAnAccount:hover {
+    color: #3b38d3;
+  }
+  

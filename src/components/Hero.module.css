@@ -1,0 +1,753 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.heroContainer {
+  overflow: hidden;
+  
+}
+
+.heroContainer,
+.heroContainer * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.mainContainer {
+  position: relative;
+  width: 1281px;
+  height: 834px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.frame {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 86px;
+  position: absolute;
+  width: 1280px;
+  height: 861px;
+  top: 0;
+  left: 0.5px;
+  padding: 112px 0 62px 0;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 40px;
+  position: relative;
+  width: 527px;
+  padding: 44px 0 0 0;
+  z-index: 1;
+}
+
+.hotelTourExperiences {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 527px;
+  min-width: 0;
+  height: auto; /* Thay đổi từ 160px sang auto để phù hợp với nội dung */
+  color: #111827;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 72px; /* Có thể điều chỉnh nếu cần */
+  font-weight: 500;
+  line-height: 90px; /* Tăng chiều cao dòng */
+  text-align: left;
+  text-overflow: initial;
+  z-index: 2;
+  overflow: visible; /* Đảm bảo nội dung không bị cắt */
+  margin-bottom: 20px; /* Tùy chỉnh khoảng cách dưới */
+}
+
+
+.experienceTravel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 527px;
+  min-width: 0;
+  height: 84px;
+  color: #6b7280;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  z-index: 3;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 12px;
+  position: relative;
+  width: 243px;
+  padding: 13px 25px 13px 23px;
+  cursor: pointer;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  z-index: 4;
+  overflow: hidden;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.search {
+  flex-shrink: 0;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.icon {
+  position: relative;
+  width: 16.5px;
+  height: 16.5px;
+  margin: 1.75px 0 0 1.75px;
+  background-size: 100% 100%;
+  z-index: 6;
+}
+
+.textSearchHotel {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 24px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+
+.group {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  position: relative;
+  min-width: 0;
+  height: 687px;
+  z-index: 8;
+}
+
+.flexColumnEa {
+  position: absolute;
+  width: 319.706px;
+  height: 90.39%;
+  top: 0;
+  left: 50%;
+  transform: translate(-104.31%, 0);
+  z-index: 11;
+}
+
+.rectangle {
+  position: relative;
+  width: 315.155px;
+  height: 235px;
+  margin: 0 0 0 1.411px;
+  background: url(../assets/images/banner.png) no-repeat center;
+  background-size: cover;
+  z-index: 10;
+}
+
+.rectangle1 {
+  position: relative;
+  width: 319.706px;
+  height: 356px;
+  margin: 30px 0 0 0;
+  background: url(../assets/images/banner1.png) no-repeat center;
+  background-size: cover;
+  z-index: 11;
+}
+
+.rectangle2 {
+  position: absolute;
+  width: 321.514px;
+  height: 78.75%;
+  top: 21.25%;
+  left: 50%;
+  background: url(../assets/images/banner2.png) no-repeat center;
+  background-size: cover;
+  transform: translate(3.73%, 0);
+  z-index: 9;
+}
+
+.frame3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 32px;
+  position: absolute;
+  width: 1196px;
+  height: 146px;
+  top: 625px;
+  left: 0.5px;
+  z-index: 12;
+}
+
+.frame4 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 44px;
+  position: relative;
+  width: 290px;
+  padding: 0 0 0 90px;
+  z-index: 13;
+}
+
+.frame5 {
+  display: flex;
+  justify-content: flex-start; /* Căn trái */
+  align-items: center; /* Căn giữa dọc */
+}
+
+.tab {
+  padding: 10px 15px; /* Khoảng cách bên trong */
+  margin-right: 10px; /* Khoảng cách giữa các tab */
+  cursor: pointer; /* Đổi con trỏ khi di chuột qua */
+  border: 2px solid transparent; /* Border mặc định */
+  border-radius: 8px; /* Bo tròn */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+.activeTab {
+  border-color: #ff6525; /* Màu sắc của tab được chọn */
+  background-color: rgba(255, 101, 37, 0.1); /* Nền của tab được chọn */
+}
+
+
+
+/* Hero.module.css */
+
+.searchItem {
+  position: relative; /* Đặt vị trí tương đối để định vị dropdown bên dưới */
+  cursor: pointer; /* Thêm con trỏ khi hover */
+}
+
+
+
+
+
+/* Hero.module.css */
+.locationDropdown {
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  background: white; /* Nền trắng */
+  border: 1px solid #ccc; /* Viền xung quanh */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  z-index: 1000; /* Đảm bảo dropdown nằm trên các phần tử khác */
+  width: 220px; /* Thiết lập chiều rộng */
+  max-height: 2000px; /* Thiết lập chiều cao tối đa */
+  overflow-y: 1; /* Thêm cuộn nếu quá nhiều mục */
+  border-radius: 4px; /* Bo góc cho dropdown */
+  margin-top: 200px; /* Đặt khoảng cách từ phần tử trên xuống */
+  margin-bottom: 55px;
+}
+
+/* Thay đổi chiều cao và kích thước của Select để nhỏ hơn */
+.select {
+  width: 100%; /* Đảm bảo độ rộng bằng với parent */
+  padding: 5px; /* Thêm khoảng cách bên trong */
+  
+}
+
+/* Tùy chỉnh thêm cho Select nếu cần */
+.select__control {
+  border: 1px solid #ccc; /* Viền cho dropdown */
+  border-radius: 4px; /* Bo tròn góc */
+  min-height: 100px; /* Chiều cao tối thiểu */
+}
+
+.select__menu {
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.select__menu-list {
+  padding: 0;
+}
+.select__placeholder {
+  color: #999; /* Màu chữ cho placeholder */
+}
+
+.select__option {
+  padding: 20px; /* Khoảng cách cho các option */
+}
+
+.select__option--is-focused {
+  background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+.select__option--is-selected {
+  background-color: #e0e0e0; /* Màu nền khi được chọn */
+}
+
+
+.frame7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  top: -2.22%;
+  left: 0;
+  padding: 0 2px 0 2px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 19;
+  border-radius: 130px;
+  backdrop-filter: blur(32px);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.04);
+}
+
+.frame8 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  padding: 0 12px 0 0;
+  z-index: 20;
+}
+
+.frame9 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 1103px;
+  z-index: 21;
+}
+
+.frameA {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 12px;
+  position: relative;
+  width: 243px;
+  z-index: 22;
+}
+
+.icon2 {
+  position: relative;
+  width: 16.5px;
+  height: 16.5px;
+  margin: 1.75px 0 0 1.75px;
+  background-size: 100% 100%;
+  z-index: 23;
+}
+
+.textSearch {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 24px;
+  color: #1f2937;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 24;
+}
+.inputGroup {
+  display: flex;
+  gap: 12px;
+  width: 100%; /* Đảm bảo ô tìm kiếm chiếm hết chiều rộng */
+}
+
+
+.inputSearch {
+  flex-grow: 1;
+  height: 60px; /* Tăng chiều cao ô nhập liệu */
+  padding: 0 20px; /* Tăng padding bên trái và bên phải */
+  border: 1px solid rgba(243, 244, 246, 1); /* Viền nhẹ nhàng */
+  border-radius: 9999px; /* Bo tròn các góc */
+  background: rgba(255, 255, 255, 0.5); /* Nền ô tìm kiếm trong suốt */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Shadow nhẹ */
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  line-height: 24px;
+  color: #1f2937; /* Màu chữ */
+  outline: none;
+}
+
+/* Flexbox for Search Box */
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  width: 100%; /* Hoặc giá trị cụ thể như 600px */
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+/* Individual Search Items */
+.searchItem {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+/* Icon in each search item */
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #888;
+}
+
+/* Text inside each search item */
+.textGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main label in search item */
+.label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Sub-label text (description) */
+.subLabel {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Search button (magnifying glass) */
+.searchButton {
+  background-color: #6a5af9;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for search button */
+.searchButton:hover {
+  background-color: #5843c4;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .searchBox {
+    flex-direction: column;
+  }
+
+  .searchItem {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .searchButton {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.searchInput {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  line-height: 24px;
+  color: #1f2937;
+}
+/* Nút tìm kiếm */
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px; /* Điều chỉnh chiều rộng */
+  height: 60px; /* Chiều cao phù hợp với input */
+  background: #ff6525; /* Màu nền nút */
+  border-radius: 9999px; /* Bo tròn nút */
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow nút */
+}
+
+.button2:hover {
+  background-color: #e65c00; /* Màu nền khi hover */
+}
+
+.button2Text {
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+/* Modal Styling */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  max-width: 650px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  
+}
+
+.modalContent h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Date Picker Styling */
+.calendarContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it spans the full width */
+  margin: 0 auto; /* Center the container within the modal */
+}
+.react-datepicker {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.react-datepicker__header {
+  background-color: #ff6525;
+  color: #ffffff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.react-datepicker__current-month {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.react-datepicker__day-name {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.25em 0;
+}
+
+.react-datepicker__day {
+  color: #333;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0.2em;
+  transition: background-color 0.2s;
+}
+
+.react-datepicker__day--selected, 
+.react-datepicker__day--keyboard-selected {
+  background-color: #3db3ad;
+  color: #fff;
+}
+
+.react-datepicker__day--in-range {
+  background-color: #a0e3db;
+  color: #333;
+}
+
+.react-datepicker__day:hover {
+  background-color: #ff6525;
+  color: #fff;
+}
+
+.react-datepicker__day--outside-month {
+  color: #ccc;
+}
+
+/* Adjust spacing between months */
+.react-datepicker__month-container {
+  margin: 0 15px;
+}
+
+/* Navigation Arrows */
+.react-datepicker__navigation {
+  top: 18px;
+  line-height: 1.5rem;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: #ffffff;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: #ffffff;
+}
+
+/* Confirm Button */
+.confirmButton {
+  background-color: #ff6525;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.confirmButton:hover {
+  background-color: #e55d20;
+}
+
+/* Night Option Styling */
+.nightOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text and dropdown to the left */
+  gap: 8px; /* Add space between label and dropdown */
+  width: 100%; /* Ensure it takes the width of its container */
+  margin-top: 15px; /* Add space from the calendar above */
+}
+
+.nightOption label {
+    font-size: 14px;
+  font-weight: 500;
+  color: #333; /* Darker text for better visibility */
+  margin-bottom: 5px;
+}
+
+.nightOption input {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Guest Selector Styling */
+.guestItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.guestControls {
+  display: flex;
+  align-items: center;
+}
+
+.guestControls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.guestControls span {
+  font-size: 16px;
+  min-width: 30px;
+  text-align: center;
+}

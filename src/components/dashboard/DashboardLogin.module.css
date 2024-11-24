@@ -1,0 +1,99 @@
+/* src/components/dashboard/DashboardLogin.module.css */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f2f6;
+  }
+  
+  .loginBox {
+    width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 24px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .inputGroup label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 20px;
+  }
+  
+  .loginButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .loginButton:active {
+    transform: scale(0.98);
+  }
+  /* src/components/dashboard/DashboardLogin.module.css */
+.homeButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #7f8c8d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 12px;
+  }
+  
+  .homeButton:hover {
+    background-color: #707b7c;
+  }
+  
+  .homeButton:active {
+    transform: scale(0.98);
+  }
+  

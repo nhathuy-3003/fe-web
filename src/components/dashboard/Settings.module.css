@@ -1,0 +1,128 @@
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profileImageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.profileImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.placeholderImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+  color: #95a5a6;
+}
+
+.imageUploadButton {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.imageUploadButton:hover {
+  background-color: #2980b9;
+}
+
+.fileInput {
+  display: none;
+}
+
+label {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.saveButton {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+  background-color: #2980b9;
+}
+
+.logoutButton {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b;
+}
+
+.homeButton {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.homeButton:hover {
+  background-color: #27ae60;
+}

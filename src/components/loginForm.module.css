@@ -1,0 +1,172 @@
+.mainContainer {
+  max-width: 500px; /* Increased max-width for a wider container */
+  width: 100%; /* Ensure it takes full width of the parent */
+  margin: 0 auto;
+  padding: 40px; /* Adjust padding for better spacing */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.frame1 {
+  text-align: center;
+  margin-bottom: 30px; /* Margin for better separation */
+}
+
+.login {
+  font-size: 28px; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #333;
+}
+
+.welcomeMessage {
+  font-size: 16px; /* Increased font size for better readability */
+  color: #666;
+}
+
+.frame2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 25px; /* Space between social buttons and input */
+  align-items: center; /* Center align items */
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text and icon horizontally */
+  padding: 12px; /* Increased padding for better click area */
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px; /* Slightly more rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  width: 100%; /* Full width for the button */
+}
+
+.buttonText {
+  margin-left: 10px; /* Space between icon and text */
+}
+
+.groupC {
+  display: flex;
+  align-items: center;
+  margin: 30px 0; /* Margin for better separation */
+}
+
+.line {
+  height: 1px;
+  background-color: #ccc;
+  flex-grow: 1;
+  margin: 0 10px; /* Add margin on both sides of the line */
+}
+
+.buttonD {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.buttonOr {
+  font-weight: bold;
+  color: #999;
+  margin: 0 10px; /* Add margin for spacing around "OR" */
+}
+
+
+.line {
+  height: 1px;
+  background-color: #ccc;
+  flex-grow: 1;
+}
+
+.inputGroup {
+  margin-bottom: 25px; /* Margin for better spacing */
+  display: flex; /* Added flex to align items */
+  flex-direction: column; /* Ensure vertical stacking */
+}
+
+.emailLabel,
+.passwordLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input {
+  width: 100%; /* Full width for inputs */
+  padding: 12px; /* Spacious padding */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effects */
+  margin-bottom: 10px; /* Margin to separate input from button */
+}
+
+.input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #4f46e5; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5); /* Add shadow on focus */
+}
+
+.button12 {
+  width: 100%; /* Full width for button */
+  padding: 12px; /* Spacious padding */
+  background-color: #4f46e5; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.button12:hover {
+  background-color: #3b38d3; /* Darker on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.button14 {
+  text-align: center;
+  margin-top: 15px; /* Margin for better spacing */
+}
+
+.newUser {
+  color: #555;
+}
+
+.createAnAccount {
+  color: #4f46e5; /* Color for link */
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s; /* Transition for color change */
+}
+
+.createAnAccount:hover {
+  color: #3b38d3; /* Darker on hover */
+}
+.forgotPassword {
+  text-align: right; /* Align to the right */
+  margin-top: 10px; /* Space above the link */
+}
+
+.forgotPasswordLink {
+  color: #4f46e5; /* Match your theme color */
+  text-decoration: underline; /* Underline for visibility */
+  cursor: pointer;
+  transition: color 0.3s; /* Transition effect */
+}
+
+.forgotPasswordLink:hover {
+  color: #3b38d3; /* Darker on hover */
+}

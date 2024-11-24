@@ -1,0 +1,199 @@
+.hotelListContainer {
+  display: flex;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 280px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Tạo nền gradient */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebarSection {
+  margin-bottom: 20px;
+}
+
+.sidebarSection h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebarSection p {
+  font-size: 15px;
+  color: #424242;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dateGuestSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.dateGuestSection span {
+  display: block;
+  font-size: 15px;
+  color: #616161;
+  font-weight: 500;
+}
+
+.priceRange {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.filterItem {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.filterItem input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.filterLink {
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.filterLink:hover {
+  text-decoration: underline;
+}
+
+.khachSanList {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.image {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hotelName {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.location {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.locationIcon {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+.rating {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.paymentOption {
+  font-size: 14px;
+  color: green;
+  margin-top: 5px;
+}
+
+.discountTag {
+  font-size: 12px;
+  color: #ff5722;
+  background-color: #ffe0b2;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.selectRoomButton {
+  background-color: #ff6525;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.selectRoomButton:hover {
+  background-color: #e65c20;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

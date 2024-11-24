@@ -1,0 +1,141 @@
+/* header.module.css */
+.headerContainer {
+  position: relative;
+  width: 100%; /* Chiều rộng 100% */
+  max-width: 3000px; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto; /* Căn giữa */
+  background-color: rgba(255, 255, 255, 0.9); /* Độ trong suốt */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+}
+
+.headerTransparent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px; /* Padding cho khoảng trống */
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Chiếm khoảng trống */
+}
+
+.headerNavigation {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* Khoảng cách giữa các menu item */
+}
+.headerNavItem {
+  text-decoration: none; /* Bỏ gạch chân cho các liên kết */
+  color: inherit; /* Giữ màu sắc của chữ theo mặc định */
+  display: flex; /* Sử dụng flex để căn giữa icon và chữ */
+  align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+  padding: 10px 15px; /* Existing padding for nav items */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Add margin to the icon */
+.headerNavItem span {
+  margin-left: 8px; /* Adjust the spacing as needed */
+}
+
+.headerNavItem:hover {
+  color: #374151; /* Màu chữ khi hover */
+}
+
+.selected {
+  font-weight: bold; /* In đậm cho mục được chọn */
+}
+
+.headerLogo {
+  width: 100px; /* Kích thước logo */
+  height: 50px;
+  background: url(../assets/images/logo.jpg) no-repeat center;
+  background-size: contain;
+  margin-right: 24px; /* Khoảng cách với menu */
+}
+
+.headerNavItem {
+  /* Existing styles for nav items */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.selected {
+  background-color: #f0f0f0; /* Change to the desired background color */
+  border-radius: 15px; /* This will create the rounded effect */
+}
+
+.headerNavItem:hover {
+  color: #374151; /* Màu chữ khi hover */
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
+
+.btnSignUp {
+  padding: 12px 32px;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 9999px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnSignUp:hover {
+  background-color: #3b38d3;
+}
+
+.btnSignUp:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}
+
+.dropdownContainer {
+  position: relative; /* Ensure dropdown is positioned relative to this container */
+}
+
+.dropdownMenu {
+  position: absolute; /* Position the dropdown absolutely */
+  top: 100%; /* Align it just below the parent */
+  left: 5px; /* Align to the left of the parent */
+  background-color: white; /* Background color for dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Deeper shadow for more emphasis */
+  z-index: 1000; /* Ensure it appears above other content */
+  border-radius: 8px; /* Rounded corners */
+  padding: 0; /* Remove padding to control width better */
+  margin-top: 30px; /* Slightly reduce space above dropdown */
+  
+  transition: all 0.3s ease; /* Smooth transition */
+  opacity: 0; /* Initially hide the dropdown */
+  visibility: hidden; /* Prevent interaction when hidden */
+  width: 200px; /* Set a fixed width or adjust as needed */
+}
+
+.dropdownMenu.show {
+  opacity: 1; /* Show dropdown with fade effect */
+  visibility: visible; /* Make it visible */
+}
+
+.dropdownItem {
+  display: flex; /* Change to flex for horizontal alignment */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Adjust padding for items */
+  text-decoration: none; /* Remove underline */
+  color: #374151; /* Text color */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.dropdownItem:hover {
+  background-color: #e0e0e0; /* Slightly darker background color on hover */
+  border-left: 4px solid #4f46e5; /* Emphasizing effect on hover */
+}

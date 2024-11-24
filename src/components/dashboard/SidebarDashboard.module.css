@@ -1,0 +1,131 @@
+.sidebar {
+  width: 250px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 20px;
+  height: 100vh;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 100;
+}
+
+.collapsed {
+  width: 80px;
+}
+
+.toggleButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #34495e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.toggleButton:hover {
+  background-color: #bdc3c7;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.logoImage {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+.collapsed .logoText {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navLink {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1rem;
+}
+
+/* Khoảng cách giữa icon và chữ */
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Highlight cho toàn bộ mục khi sidebar mở rộng */
+.navLink.active {
+  background-color: #1abc9c;
+  color: #34495e;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Hover hiệu ứng cho các mục chưa được chọn */
+.navLink:hover {
+  background-color: #2c3e50;
+}
+
+/* Khi sidebar thu nhỏ, chỉ bo tròn highlight quanh icon và giảm kích thước */
+.collapsed .navLink.active {
+  background-color: transparent;
+  padding: 0;
+  justify-content: center;
+}
+
+.collapsed .navLink.active .icon {
+  background-color: #1abc9c;
+  border-radius: 50%;
+  padding: 5px; /* Giảm padding để icon không quá lớn */
+  color: #34495e;
+  width: 30px; /* Giảm kích thước icon */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ẩn văn bản khi sidebar thu nhỏ */
+.collapsed .navLink span {
+  display: none;
+}
+
+/* Căn giữa icon và bỏ bo tròn icon khi sidebar thu nhỏ */
+.collapsed .navLink {
+  justify-content: center;
+}

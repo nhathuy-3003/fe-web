@@ -1,0 +1,537 @@
+/* Main container for the details */
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1480px;
+  margin: auto;
+}
+
+/* Main content area */
+.mainContent {
+  flex: 1 1 60%;
+  margin-right: 20px;
+}
+
+/* Generic box styling */
+.box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.label {
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.ratingLocation {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.starIcon {
+  color: #ffcc00;
+  margin-right: 5px;
+}
+
+.dot {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.actionButton {
+  background-color: transparent;
+  border: none;
+  color: #ff6525;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Room cards */
+.roomCard {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.roomCard:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: #ff6525;
+}
+
+.selectedRoom {
+  border: 2px solid #ff6525;
+}
+
+.roomImage img {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.roomInfo {
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.roomInfo h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.roomInfo p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.detailButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.detailButton:hover {
+  background-color: #0056b3;
+}
+
+/* Amenities section */
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.amenity {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin-right: 15px;
+}
+
+.amenity svg {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+/* Booking Summary Section */
+.bookingSummary {
+  flex: 1 1 35%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: fit-content;
+  text-align: center;
+}
+
+.bookingSummary h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dateGuestContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dateGuestBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dateBox {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dateBox:hover {
+  background-color: #e8f4fa;
+  border-color: #007bff;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Book Now Button */
+.bookButton {
+  padding: 12px 20px;
+  background-color: #ff6525;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.bookButton:hover {
+  background-color: #e65c23;
+}
+/* Modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+  background: white;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Thêm position: relative */
+  padding: 20px; /* Đảm bảo nội dung không bị sát viền */
+}
+
+/* Modal Body */
+.modalBody {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Image Gallery */
+.imageGallery {
+  flex: 1 1 60%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.imageDescription {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Room Details */
+.detailsWrapper {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailsWrapper h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.detailsWrapper p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.amenities {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Book Button */
+.bookButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.bookButton:hover {
+  background-color: #0056b3;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute; /* Định vị tuyệt đối bên trong modalContent */
+  top: 15px; /* Cách mép trên 15px */
+  right: 15px; /* Cách mép phải 15px */
+  background-color: #fff; /* Nền trắng để hòa vào modal */
+  border: 1px solid #ddd; /* Viền mỏng để phân biệt với nền */
+  border-radius: 50%; /* Làm nút hình tròn */
+  font-size: 18px; /* Kích thước chữ vừa đủ */
+  color: #333; /* Màu chữ trung tính */
+  width: 35px; /* Chiều rộng cố định */
+  height: 35px; /* Chiều cao cố định */
+  display: flex; /* Canh giữa dấu "✕" */
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  cursor: pointer; /* Con trỏ chuột khi hover */
+  transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+}
+
+.closeButton:hover {
+  background-color: #f5f5f5; /* Nền nhạt hơn khi hover */
+  color: #000; /* Đậm hơn khi hover */
+  transform: scale(1.1); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+/* Modal Overlay */
+.newModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền nhẹ hơn */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal Content */
+.newModalContent {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px; /* Modal nhỏ gọn hơn */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  animation: slideDown 0.4s ease;
+}
+
+/* Modal Title */
+.newModalTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* DatePicker */
+.newDatePicker {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+/* Close Button */
+.newCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #999999;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.newCloseButton:hover {
+  color: #ff6525;
+}
+
+/* Confirm Button */
+.newConfirmButton {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6525;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newConfirmButton:hover {
+  background-color: #e65c23;
+}
+
+/* Guest Controls Container */
+.newGuestControls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Guest Item */
+.newGuestItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.newGuestItem:last-child {
+  border-bottom: none;
+}
+
+/* Counter Section */
+.newCounter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Counter Button */
+.newCounter button {
+  background-color: #ff6525;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newCounter button:hover {
+  background-color: #e65c23;
+  transform: scale(1.1);
+}
+
+/* Counter Display */
+.newCounter span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  min-width: 50px;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.amenity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.amenityIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

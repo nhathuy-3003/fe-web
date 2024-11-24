@@ -1,0 +1,213 @@
+.checkoutContainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to the box */
+  max-width: 600px; /* Set max width for the box */
+  margin: auto; /* Center the box */
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5e3dd2; /* Title color */
+}
+
+.separator {
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.bookingInfo {
+  margin-bottom: 20px;
+}
+
+.bookingTitle, .summaryTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hotelCard {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hotelImage {
+  flex: 0 0 120px;
+  height: 80px;
+  background-color: #eee;
+}
+
+.hotelDetails {
+  flex: 1;
+  padding: 10px;
+}
+
+.roomName, .hotelName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.separatorLine {
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.starIcon {
+  color: #ff9800;
+  margin-right: 5px;
+}
+
+.dateGuestInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.calendarInfo, .guestInfo {
+  display: flex;
+  align-items: center;
+}
+
+.dateLabel, .guestsLabel {
+  font-size: 12px;
+}
+
+.dateRange, .guestCount {
+  font-size: 14px;
+}
+
+.bookingSummary {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.summaryTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bookingCodeContainer, .customerInfoContainer, .bookingDateContainer, .totalAmountContainer, .paymentMethodContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align vertically */
+  margin-bottom: 10px;
+}
+
+.bookingCodeContainer span,
+.customerInfoContainer span,
+.bookingDateContainer span,
+.totalAmountContainer span,
+.paymentMethodContainer span {
+  flex: 1;
+}
+
+.bookingCodeLabel, .customerInfoLabel, .dateLabel, .totalLabel, .paymentMethodLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bookingCode, .customerInfo, .bookingDate, .totalAmount, .paymentMethodValue {
+  font-size: 14px;
+  text-align: right; /* Right-align for values */
+}
+
+.totalAmountContainer .totalAmount {
+  font-weight: bold;
+  color: #d32f2f; /* Highlight total amount in red */
+}
+
+.paymentButton {
+  background-color: #ff6525;
+  color: white;
+  padding: 10px; /* Smaller button padding */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: auto; /* Set width automatically */
+  font-weight: bold;
+  margin-top: 20px; /* Space above the button */
+  align-self: flex-start; /* Align button to the left */
+}
+
+.paymentButton:hover {
+  background-color: #e65c20; /* Slightly darker on hover */
+}
+
+/* New classes for amenities */
+.roomAmenitiesContainer {
+  margin-top: 20px;
+}
+
+.roomAmenitiesLabel {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.amenitiesList {
+  list-style: none;
+  padding: 0;
+}
+
+.amenityItem {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.amenityIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.bookingInfoContainer {
+  margin-top: 10px;
+}
+
+.bookingInfoLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bookingInfo {
+  font-size: 14px;
+}
+
+/* Utility class for spacing in sections */
+.bookingCodeContainer,
+.customerInfoContainer,
+.bookingDateContainer,
+.totalAmountContainer,
+.paymentMethodContainer {
+  margin-bottom: 15px;
+}
+
+/* Styles for the date and guest info */
+.dateInfo, .guestDetails {
+  font-size: 14px;
+  color: #555;
+}
+
+.dateRange, .guestCount {
+  font-size: 14px;
+  color: #333;
+}

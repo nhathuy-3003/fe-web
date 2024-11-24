@@ -1,0 +1,162 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
+}
+
+.home-container {
+  display: flex; /* Sử dụng flexbox cho container */
+  flex-direction: column; /* Sắp xếp các component theo chiều dọc */
+  align-items: center; /* Căn giữa các component */
+  justify-content: center;
+  width: 100%;
+  max-width: 1480px; /* Giới hạn chiều rộng */
+  margin: 0 auto; /* Căn giữa */
+  padding: 50px 20px; /* Thêm padding */
+  background-color: #FFF;
+}
+
+.component-spacing {
+  margin-bottom: 500px; /* Khoảng cách giữa các component */
+}
+
+/* Các component sẽ có box riêng */
+.component {
+  width: 100%; /* Đảm bảo các component chiếm toàn bộ chiều rộng */
+  max-width: 1200px; /* Giới hạn chiều rộng */
+  margin: 0 auto; /* Căn giữa */
+  padding: 20px; /* Padding cho nội dung */
+  box-sizing: border-box; /* Đảm bảo tính toán kích thước bao gồm padding */
+  border-radius: 10px; /* Bo góc cho box */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+  background-color: #f9f9f9; /* Màu nền cho box */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272444; /* Màu tối cho hero section */
+  color: #FFF;
+  
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero-section button {
+  padding: 15px 30px;
+  background-color: #FF6525;
+  border: none;
+  color: #FFF;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-section button:hover {
+  background-color: #FF8237;
+}
+
+/* Popular Destinations */
+.popular-destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Featured Hotels */
+.featured-hotels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Benefits */
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.benefits .benefit-item {
+  flex: 1;
+  padding: 20px;
+  background-color: #3DB3AD;
+  color: #FFF;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Top Authors */
+.top-authors {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.top-authors .author {
+  flex: 1;
+  padding: 20px;
+  background-color: #FF6525;
+  color: #FFF;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Explore Nearby */
+.explore-nearby {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.explore-nearby .location {
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.explore-nearby .location img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.explore-nearby .location h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.explore-nearby .location p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px; /* Giảm padding cho màn hình nhỏ */
+  }
+  
+  .hero-section {
+    flex-direction: column; /* Đặt hero section theo cột */
+    align-items: flex-start; /* Căn trái */
+  }
+
+  .popular-destinations,
+  .featured-hotels,
+  .benefits,
+  .top-authors,
+  .explore-nearby {
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột cho màn hình nhỏ */
+  }
+}

@@ -1,0 +1,266 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.mainContainer {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 1476px;
+  height: 561px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.rectangle {
+  flex-shrink: 0;
+  position: relative;
+  width: 854px;
+  height: 561px;
+  background-size: cover;
+  z-index: 1;
+  border-radius: 16px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  position: relative;
+  width: 174px;
+  margin: 505.057px 0 0 23.67px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 46px;
+}
+
+.photograph {
+  flex-shrink: 0;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+}
+
+.icon {
+  position: relative;
+  width: 16px;
+  height: 14px;
+  margin: 3px 0 0 2px;
+  background-size: 100% 100%;
+  z-index: 4;
+}
+
+.showAllPhotos {
+  flex-shrink: 0;
+  height: 20px;
+  color: #1f2937;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.frame1, .frame4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 10px;
+  position: relative;
+  width: 301px;
+  min-height: 0;
+  z-index: 6;
+  border-radius: 20px;
+}
+
+.rectangle2, .rectangle3, .rectangle5, .rectangle6 {
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  position: relative;
+  min-width: 0;
+  background-size: cover;
+  z-index: 7;
+  border-radius: 16px;
+}
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Container */
+.modal {
+  position: relative;
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  max-height: 80%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 1100;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #e74c3c;
+}
+
+/* Modal Header */
+.modalHeader {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.modalTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+/* Modal Content */
+.modalContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.carouselImages {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carouselImage {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+
+/* Image Description */
+.imageDescription {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Navigation Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrowLeft {
+  left: 10px;
+}
+
+.arrowRight {
+  right: 10px;
+}
+
+/* Confirm Button */
+.confirmButton {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+  background-color: #0056b3;
+}
+.imageCount {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,105 @@
+.contactContainer {
+    max-width: 800px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 40px; /* Padding around the content */
+    background-color: #ffffff; /* White background color */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for more emphasis */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center align the title */
+    color: #4f46e5; /* Primary color */
+  }
+  
+  .contactInfo {
+    margin-bottom: 30px; /* Space below contact information */
+  }
+  
+  .description {
+    font-size: 1.1rem; /* Regular font size */
+    line-height: 1.6; /* Line height for readability */
+    color: #555555; /* Text color */
+    text-align: center; /* Center align the description */
+  }
+  
+  .details {
+    text-align: center; /* Center align the contact details */
+    margin-top: 10px; /* Space above contact details */
+  }
+  
+  .label {
+    display: block; /* Block display for labels */
+    margin-bottom: 10px; /* Space below labels */
+  }
+  
+  .input,
+  .textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: #4f46e5; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .textarea {
+    height: 100px; /* Height for textarea */
+  }
+  
+  .submitButton {
+    padding: 12px 20px; /* Padding for button */
+    background-color: #4f46e5; /* Primary button color */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Font size for button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .submitButton:hover {
+    background-color: #3b38d3; /* Darker color on hover */
+  }
+  
+  .mapContainer {
+    margin-top: 40px; /* Space above map */
+  }
+  
+  .mapTitle {
+    font-size: 1.5rem; /* Font size for map title */
+    margin-bottom: 10px; /* Space below map title */
+    text-align: center; /* Center align the map title */
+    color: #4f46e5; /* Primary color */
+  }
+  
+  @media (max-width: 768px) {
+    .contactContainer {
+      padding: 20px; /* Reduced padding on smaller screens */
+    }
+  
+    .title {
+      font-size: 2rem; /* Slightly smaller title */
+    }
+  
+    .input,
+    .textarea {
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  
+    .submitButton {
+      font-size: 0.9rem; /* Slightly smaller button text */
+    }
+  }
+  

@@ -1,0 +1,79 @@
+/* Container tổng chứa tất cả các card */
+.container {
+  display: flex;
+  flex-direction: column; /* Đặt chiều dọc để căn giữa các phần tử */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  width: 1480px;
+}
+
+/* Tiêu đề chính */
+.title {
+  font-size: 24px; /* Kích thước chữ cho tiêu đề */
+  font-weight: bold; /* Làm đậm chữ */
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Mô tả ngắn */
+.subtitle {
+  font-size: 16px; /* Kích thước chữ cho mô tả */
+  color: #555; /* Màu chữ cho mô tả */
+  margin-bottom: 20px; /* Khoảng cách dưới mô tả */
+  text-align: center; /* Căn giữa mô tả */
+}
+
+/* Card tổng chứa tất cả các card nằm ngang */
+.cardContainer {
+  display: flex; /* Sử dụng flexbox để sắp xếp các card theo chiều ngang */
+  justify-content: space-around; /* Căn giữa các card */
+  flex-wrap: wrap; /* Cho phép các card xuống dòng nếu không đủ chỗ */
+}
+
+/* Card đơn lẻ */
+.card {
+  display: flex;
+  flex-direction: column; /* Đặt chiều dọc cho card */
+  align-items: center; /* Căn giữa các phần tử trong card */
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 220px; /* Kích thước chiều rộng của card */
+  margin: 10px; /* Khoảng cách giữa các card */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+  background-color: #f9f9f9; /* Màu nền của card */
+}
+
+/* Hiệu ứng khi hover vào card */
+.card:hover {
+  transform: translateY(-10px); /* Đẩy card lên khi hover */
+}
+
+/* Hình ảnh trong card */
+.cardImage {
+  width: 100px; /* Bạn có thể điều chỉnh lại kích thước hình ảnh */
+  height: 100px;
+  object-fit: contain; /* Đảm bảo hình ảnh không bị cắt */
+  margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+}
+
+/* Text trong card */
+.cardText {
+  font-size: 18px; /* Kích thước chữ cho text chính */
+  font-weight: 500; /* Độ đậm của chữ */
+  color: #333; /* Màu chữ */
+  text-align: center; /* Căn giữa chữ */
+  margin-bottom: 10px; /* Khoảng cách dưới text chính */
+}
+
+/* Description text trong card */
+.cardDescription {
+  font-size: 14px; /* Kích thước chữ cho mô tả */
+  color: #666; /* Màu chữ cho mô tả */
+  text-align: center; /* Căn giữa chữ */
+  line-height: 1.5; /* Khoảng cách giữa các dòng chữ */
+}
